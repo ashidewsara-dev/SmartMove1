@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="SmartMove Transport front-end learning prototype">
+        <title>SmartMove — Passenger Portal</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="auth.js" defer></script>
+        <script src="app.js" defer></script>
+    </head>
+    <body data-role="customer">
+<aside class="sidebar" id="sidebar"><a class="brand" href="#overview">
+    <span class="brand-mark">S</span>
+    <span>smart<span class="accent">move</span>
+    <small>TRANSPORT SOLUTIONS</small></span></a>
+    <div class="workspace"><span class="live-dot"></span> PASSENGER PORTAL 
+        <span class="chevron">⌄</span></div><p class="nav-label">WORKSPACE</p>
+        <nav id="navigation"><button class="nav-item active" data-page="overview">
+            <span>◫</span> Overview</button><button class="nav-item" data-page="book">
+                <span>＋</span> Book a trip <i class="nav-tag">NEW</i></button>
+                <button class="nav-item" data-page="tickets"><span>▤</span> My tickets</button>
+                <button class="nav-item" data-page="reviews"><span>☆</span> Reviews</button>
+                <button class="nav-item" data-page="help"><span>?</span> Help guide</button></nav>
+                <div class="sidebar-bottom"><div class="help-card"><span class="help-icon">✦</span>
+                    <strong>Need a hand?</strong><p>Explore the demo and test the available interactions.</p>
+                    <button class="text-button" data-page="help">Open quick guide ↗</button></div>
+                    <div class="profile"><div class="avatar" id="profileInitials">SM</div><div>
+                        <strong id="profileName">Demo account</strong><small>Passenger account</small></div>
+                        <button class="icon-button" id="profileMenu" aria-label="Profile options">•••</button></div>
+                        <button class="logout-link" id="logoutButton">↪ Sign out</button></div></aside>
+<main class="main-area"><header class="topbar">
+    <button class="icon-button mobile-menu" id="menuToggle" aria-label="Open menu">☰</button>
+    <div class="crumb"><span>Workspace</span><b>/</b><strong id="breadcrumb">Overview</strong></div>
+    <div class="top-actions"><span class="system-status"><span class="live-dot"></span> Database-backed prototype</span>
+        <button class="icon-button notification" id="notifications" aria-label="Notifications">♧<i></i></button>
+        <div class="top-avatar" id="topAvatar">SM</div></div>
+    </header>
+        <section class="content" id="app" aria-live="polite"></section>
+        <footer>© 2026 SmartMove Transport Solutions <span>DATABASE-BACKED COURSEWORK PROTOTYPE</span>
+        </footer></main><div class="toast-region" id="toasts" aria-live="polite"></div><dialog id="modal"><div class="modal-head">
+            <div><span class="eyebrow">SMARTMOVE</span><h2 id="modalTitle">Add item</h2></div>
+            <button class="icon-button" id="closeModal" aria-label="Close dialog">×</button></div>
+            <div id="modalBody"></div></dialog>
+        </body>
+        </html>

@@ -1,0 +1,24 @@
+{
+  "name": "smartmove-front-end-fixed",
+  "version": "1.0.0",
+  "description": "SmartMove transport system with Express, Oracle Database CRUD APIs and MongoDB passenger reviews.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test:oracle": "node test-oracle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.7",
+    "express": "^5.3.0",
+    "mongodb": "^7.7.0",
+    "oracledb": "^26.0.0"
+  },
+  "allowScripts": {
+    "oracledb@26.0.0": true
+  }
+}
